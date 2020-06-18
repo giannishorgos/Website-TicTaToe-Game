@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+head {
+    background-color: rgb(230, 230, 230);
+}
+body > h1 {
+    background-color: rgb(230, 230, 230);
+    height: 60px;
+    padding-top: 5px;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #000
+    
+}
+
+body {
+    background-color: rgb(25, 25, 65);
+}
+.contacts {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    right: 50px
+}
+
+.buttons {
+
+    padding: 0px 20px 0px 20px;
+    top: -10px;
+    height: 40px;
+    width: 50px;
+    transition: 0.1s;
+}
+
+.buttons:hover {
+    border-bottom: 2px solid red;
+    box-shadow: 2px green;
+}
