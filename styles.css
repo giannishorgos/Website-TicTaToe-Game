@@ -41,3 +41,25 @@ body {
     border-bottom: 2px solid red;
     box-shadow: 2px green;
 }
+
+.grid {
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    border: none;
+    width: 300px;
+    height: 300px;
+    top: 500px;
+    left: 40%;
+}
+
+.grid1 {
+    height: 100px;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid red;
+
+}
