@@ -1,0 +1,49 @@
+body {
+    background-color: #131313;
+    padding-top: 40px;
+}
+
+body > p {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: x-large;
+    color: #55524C;
+}
+.player1 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+    color: #265AA9;
+}
+
+.player2 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+    color: #DE1E2C;
+}
+
+.board {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas:
+        "c1 c2 c3"
+        "c4 c5 c6"
+        "c7 c8 c9";
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    border: 20px solid black;
+    border-radius: 5px;;
+}
+
+.cell {
+    background-color: #131313;
+    border: 20px solid black;
+    border-radius: 24%;
+}
