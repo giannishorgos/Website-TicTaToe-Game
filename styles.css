@@ -1,5 +1,5 @@
 body {
-    background-color: #131313;
+    background: radial-gradient(#131313, #000);
     padding-top: 40px;
 }
 
@@ -33,7 +33,7 @@ body > p {
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
     grid-template-areas:
-        "c1 c2 c3"
+        "c1 55524Cc2 c3"
         "c4 c5 c6"
         "c7 c8 c9";
     height: 300px;
@@ -83,6 +83,23 @@ body > p {
 
 .hide {
     display: none;
+}
+
+#link-container {
+    position: relative;
+    height: 1fr;
+}
+a {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);    
+    color: #55524C;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 17px;
+    border: none;
+    box-shadow: 10px 10px 10px black;
 }
 
 .player1:hover {

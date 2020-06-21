@@ -3,6 +3,8 @@ let filled = 0;
 let grid = new Array(9);
 grid = document.getElementById("parent").querySelectorAll(".cell");
 
+
+//put's the correct player move at correct signature and with corrects styles
 function playAt(cell)
 {
     if(filled < 10 && cell.innerHTML === "")
@@ -33,6 +35,7 @@ function playAt(cell)
     checkWinner();
 } 
 
+//check if someone win the game
 function checkWinner()
 {
     for(let i = 0; i < 3; ++i)
@@ -58,6 +61,7 @@ function checkWinner()
         displayWinner(grid[i].innerHTML);
 }
 
+//Display the Winning Message
 function displayWinner(winner)
 {
     document.getElementById("before").innerText = "WINNER   ";
@@ -82,6 +86,7 @@ function displayWinner(winner)
     retry();
 }
 
+//show-off the retry button
 function retry()
 {
     let btn = document.getElementById("retry");
@@ -89,6 +94,7 @@ function retry()
     btn.addEventListener("click", reset);
 }
 
+//empty the board and reset all the setting
 function reset()
 {
     let elem = document.getElementById("turn_pl");
@@ -130,7 +136,7 @@ function reset()
     document.getElementById("retry").classList.add('hide');
 }
     
-
+//the "game-loop"
 function game()
 {
     console.log(grid);
