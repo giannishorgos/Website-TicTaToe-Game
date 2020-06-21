@@ -59,29 +59,39 @@ function checkWinner()
     if(grid[i].innerHTML === grid[i + 2].innerHTML && grid[i + 2].innerHTML === grid[i + 4].innerHTML
         && (grid[i].innerHTML === "X" || grid[i].innerHTML === "O"))
         displayWinner(grid[i].innerHTML);
+    if(filled === 9)
+        displayWinner("");
 }
 
 //Display the Winning Message
 function displayWinner(winner)
 {
-    document.getElementById("before").innerText = "WINNER   ";
     document.getElementById("after").innerText = "";
     let elem = document.getElementById("turn_pl");
-    elem.innerHTML = winner;
+    if(winner != "")
+    {
+        document.getElementById("before").innerText = "WINNER   ";
+        elem.innerHTML = winner;
+        if(elem.classList.contains("player1"))
+        {
+            elem.classList.remove("player1");
+            elem.classList.add("player2");
+            document.getElementById("before").classList.add("player2");
+            document.getElementById("before").style.fontSize = "50px";
+        } 
+        else 
+        {
+            elem.classList.remove("player2");
+            elem.classList.add("player1");
+            document.getElementById("before").classList.add("player1");
+            document.getElementById("before").style.fontSize = "50px";
+        }
+    }
+    else
+    {
+        document.getElementById("before").innerText = "DRAW !";
+        elem.innerHTML = "";
 
-    if(elem.classList.contains("player1"))
-    {
-        elem.classList.remove("player1");
-        elem.classList.add("player2");
-        document.getElementById("before").classList.add("player2");
-        document.getElementById("before").style.fontSize = "50px";
-    } 
-    else 
-    {
-        elem.classList.remove("player2");
-        elem.classList.add("player1");
-        document.getElementById("before").classList.add("player1");
-        document.getElementById("before").style.fontSize = "50px";
     }
     retry();
 }
