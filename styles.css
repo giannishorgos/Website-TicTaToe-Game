@@ -51,3 +51,54 @@ body > p {
     border-radius: 24%;
 
 }
+
+.btn {
+    position: relative;
+    height: 50px;
+}
+
+#retry {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #55524C;
+    text-align: center;
+    border: none;
+    border-top: 2px solid #265AA9;
+    border-bottom: 2px solid #DE1E2C;
+    border-radius: 10%;
+    padding: 5px 5px 5px 5px;
+    background-color: #131313;
+    transition: 0.5s;
+}
+
+#retry:hover {
+    font-size: 33px;
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.4);;
+}
+
+.hide {
+    display: none;
+}
+
+.player1:hover {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+    opacity: 0.5;
+    color: #265AA9;
+}
+
+.player2:hover {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+    opacity: 0.3;
+    color: #DE1E2C;
+}

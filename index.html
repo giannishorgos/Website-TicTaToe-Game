@@ -8,9 +8,9 @@
 
     </head>
     <body>
-        <p id="turn">It's
+        <p id="turn"><span id="before">It's</span>
             <span class="player1" id="turn_pl">X</span>
-            turn!
+            <span id="after">turn!</span>
         </p>
         <div class="board" id="parent">
             <div class="cell" id="c1"></div>
@@ -22,6 +22,9 @@
             <div class="cell" id="c7"></div>
             <div class="cell" id="c8"></div>
             <div class="cell" id="c9"></div>
+        </div>
+        <div class="btn">
+            <button class="hide" id="retry">Retry</button>
         </div>
         <script src="main.js"></script>
     </body>
