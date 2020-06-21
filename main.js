@@ -44,7 +44,7 @@ function checkWinner()
             && (grid[i].innerHTML === "X" || grid[i].innerHTML === "O"))
             displayWinner(grid[i].innerHTML);
     }
-    for(let i = 0; i < 6; i += 3)
+    for(let i = 0; i < 7; i += 3)
     {
         if(grid[i].innerHTML === grid[i + 1].innerHTML && grid[i + 1].innerHTML === grid[i + 2].innerHTML
             && (grid[i].innerHTML === "X" || grid[i].innerHTML === "O"))
