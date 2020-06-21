@@ -59,7 +59,7 @@ function checkWinner()
     if(grid[i].innerHTML === grid[i + 2].innerHTML && grid[i + 2].innerHTML === grid[i + 4].innerHTML
         && (grid[i].innerHTML === "X" || grid[i].innerHTML === "O"))
         displayWinner(grid[i].innerHTML);
-    if(filled === 9)
+    if(filled == 9)
         displayWinner("");
 }
 
@@ -102,6 +102,7 @@ function retry()
     let btn = document.getElementById("retry");
     btn.classList.remove("hide");
     btn.addEventListener("click", reset);
+    setTimeout(reset, 2500);
 }
 
 //empty the board and reset all the setting
