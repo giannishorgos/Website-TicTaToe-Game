@@ -5,5 +5,5 @@
 
 **https://giannishorgos.github.io/Website-TicTaToe-Game/**
 
-![alt text](https://github.com/giannishorgos/SFML-Gravity-Simulation/blob/master/Screenshot%20from%202020-11-28%2013-02-11.png?raw=true)
+![alt text](https://github.com/giannishorgos/Website-TicTaToe-Game/blob/gh-pages/reee.png?raw=true)
 
